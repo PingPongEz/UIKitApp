@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var testLabel: UILabel!
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var sliderForLabel: UISlider!
+    @IBOutlet var textField: UITextField!
     
     
     override func viewDidLoad() {
@@ -32,11 +33,13 @@ class ViewController: UIViewController {
         sliderForLabel.value = sliderForLabel.maximumValue
         testLabel.font = testLabel.font.withSize(CGFloat(sliderForLabel.value))
         
+        
+        
     }
 
     
     @IBAction func segmentedControlSwitch() {
-        switch segmentedControlSwitch {
+        switch segmentedControl.selectedSegmentIndex {
         case 0: testLabel.text = "First one selected"
         case 1: testLabel.text = "Second one selected"
         default: testLabel.text = "Third one selected"
@@ -45,6 +48,10 @@ class ViewController: UIViewController {
     
     @IBAction func sliderDoingSomething() {
         testLabel.font = testLabel.font.withSize(CGFloat(sliderForLabel.value))
+    }
+    
+    @IBAction func buttonDone() {
+        testLabel.text = textField.text
     }
     
 }
