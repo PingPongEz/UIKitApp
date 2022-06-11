@@ -51,8 +51,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonDone() {
+        guard let text = textField.text, !text.isEmpty else {
+            alertShowing(with: "Empty text field", and: "Enter Name")
+            return
+        }
+        
+        if let _ = Double(text) {
+            alertShowing(with: "Wrong format", and: "Ciril only")
+            return
+        }
         testLabel.text = textField.text
     }
     
 }
 
+extension ViewController {
+    
+    private func alertShowing(with title: String, and text: String) {
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
+        let okAction = UIAlertAction(
+            title: "Ok",
+            style: .default)
+        { _ in self.textField.text = ""}
+        alert.addAction(okAction)
+    }
+    
+}

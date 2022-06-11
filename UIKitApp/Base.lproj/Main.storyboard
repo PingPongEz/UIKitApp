@@ -49,7 +49,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb6-Ko-ZgH">
-                                <rect key="frame" x="16" y="708" width="67" height="31"/>
+                                <rect key="frame" x="178" y="708" width="58.5" height="31"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -62,13 +62,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="lb6-Ko-ZgH" secondAttribute="trailing" constant="331" id="2gM-4V-dcp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lb6-Ko-ZgH" secondAttribute="bottom" constant="123" id="12r-Pc-uyI"/>
                             <constraint firstItem="3kG-aw-ye0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Duq-Ib-mWh"/>
                             <constraint firstItem="j9m-mt-lSn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="I2Z-Bn-zqw"/>
-                            <constraint firstItem="lb6-Ko-ZgH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cF2-RE-ELS"/>
+                            <constraint firstItem="lb6-Ko-ZgH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ugz-k8-ZsN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3kG-aw-ye0" secondAttribute="trailing" constant="16" id="dRZ-VF-zlg"/>
                             <constraint firstItem="j9m-mt-lSn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gg9-QQ-Ic7"/>
-                            <constraint firstItem="3kG-aw-ye0" firstAttribute="top" secondItem="lb6-Ko-ZgH" secondAttribute="bottom" constant="40" id="hGl-aV-ffC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9m-mt-lSn" secondAttribute="trailing" constant="16" id="jKS-Fa-3Fv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3kG-aw-ye0" secondAttribute="bottom" constant="53" id="rFb-Z0-3TV"/>
                         </constraints>
